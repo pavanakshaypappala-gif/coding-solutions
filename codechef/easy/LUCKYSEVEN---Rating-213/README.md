@@ -55,7 +55,7 @@ The $7$-th character of $\texttt{"outofsight"}$ is `'i'`, and hence that is Chef
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-17T05:41:33.173Z  
+**Submitted:** 2026-09-17T05:41:44.492Z  
 
 ```py
 # cook your dish here
