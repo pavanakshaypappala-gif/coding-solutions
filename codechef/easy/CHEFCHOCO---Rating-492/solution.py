@@ -1,0 +1,7 @@
+# cook your dish here
+n = int(input())
+for _ in range(n):
+    x,y,z = map(int,input().split())
+    a = x-y
+    b = a*z 
+    print(b)
