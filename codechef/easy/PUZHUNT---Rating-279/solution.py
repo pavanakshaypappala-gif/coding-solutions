@@ -1,8 +1,6 @@
 # cook your dish here
 n = int(input())
-for _ in range(n):
-    x = int(input())
-    if x>=30:
-        print("YES")
-    else:
-        print("NO")
+if 6<=n<=8:
+    print("Yes")
+else:
+    print("No")
