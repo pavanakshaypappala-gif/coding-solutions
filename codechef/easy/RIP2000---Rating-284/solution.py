@@ -1,5 +1,8 @@
 # cook your dish here
 n = int(input())
-x = n*2000
-y = x//500
-print(y)
+for _ in range(n):
+    x,y = map(int,input().split())
+    if (x>=y):
+        print(x)
+    else:
+        print(y)
