@@ -4,52 +4,67 @@
 
 ## Problem
 
-### 2000
+### Best of Two
 
-Chef had collected $N$ notes of Rs. $2000$ to pay his total college fees. However, the government banned Rs. $2000$ notes.
+Chef took an examination two times. In the first attempt, he scored $X$ marks while in the second attempt he scored $Y$ marks. According to the rules of the examination, the best score out of the two attempts will be considered as the final score.
 
-Chef wants to pay the same amount using Rs. $500$ notes only. Find the number of notes Chef needs.
+Determine the final score of the Chef.
 
 ### Input Format
-
-Each test case consists of a single integer $N$ - the number of notes of Rs. $2000$ that Chef has collected.
-
+- The first line contains a single integer $T$ — the number of test cases. Then the test cases follow.
+- The first line of each test case contains two integers $X$ and $Y$ — the marks scored by Chef in the first attempt and second attempt respectively.
 ### Output Format
 
-Output a single integer - the number of Rs. $500$ notes needed.
+For each test case, output the final score of Chef in the examination.
 
 ### Constraints
-- $1 \leq N \leq 100$
+- $1 \leq T \leq 1000$
+- $0 \le X, Y \le 100$
 ### Sample 1:
 Input
 Output
 
 ```
 4
+40 60
+67 55
+50 50
+1 100
+
 ```
 
 ```
-16
+60
+67
+50
+100
 
 ```
 
 ### Explanation:
 
-$4$ notes of Rs. $2000$ make a total of $4 \cdot 2000 = 8000$ rupees. This is equivalent to $16$ notes of Rs. $500$.
+ **Test Case 1:**  The best score out of the two attempts is $60$.
+
+ **Test Case 2:**  The best score out of the two attempts is $67$.
+
+ **Test Case 3:**  The best score out of the two attempts is $50$.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-19T13:54:48.721Z  
+**Submitted:** 2026-09-19T13:54:38.407Z  
 
 ```py
 # cook your dish here
 n = int(input())
-x = n*2000
-y = x//500
-print(y)
+for _ in range(n):
+    x,y = map(int,input().split())
+    if (x>=y):
+        print(x)
+    else:
+        print(y)
 ```
 
 ---
