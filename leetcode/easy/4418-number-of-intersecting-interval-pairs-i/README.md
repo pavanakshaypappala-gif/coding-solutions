@@ -60,9 +60,9 @@ There are no intersecting interval pairs. Hence, the answer is 0.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 51 ms (beats 100.00%)  
-**Memory:** 19.3 MB (beats 100.00%)  
-**Submitted:** 2026-09-20T03:33:37.840Z  
+**Runtime:** 47 ms (beats 100.00%)  
+**Memory:** 19.2 MB (beats 100.00%)  
+**Submitted:** 2026-09-20T03:33:54.601Z  
 
 ```py
 class Solution:
