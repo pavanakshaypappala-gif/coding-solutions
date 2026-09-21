@@ -1,6 +1,8 @@
 # cook your dish here
 n = int(input())
-for _ in range(n):
-    x,y = map(int,input().split())
-    z = x*7-y
-    print(z)
+if n<3:
+    print("GOLD")
+elif 3<=n<6:
+    print("SILVER")
+else:
+    print("BRONZE")
