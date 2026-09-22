@@ -4,61 +4,107 @@
 
 ## Problem
 
-### Couple Game
+### Air Quality Index
 
-There are $G$ girl and $B$ boy students at IIT (BHU) such that $B \gt G$.
+In the light of `G-20` summit, government has decided to keep the average air quality index (AQI)  **strictly below**  $100$.
+On some random day, Chef measures the AQI and found the value to be $X$.
 
-If ICM were a team game where teams could only be of size $2$, having  **exactly**  $1$ girl student and $1$ boy student, what would be the  **minimum**  number of boy students from IIT (BHU) who would not be able to participate?
+Find whether the government was able to keep the AQI within limits.
 
 ### Input Format
-- The first line of input will contain a single integer $T$, denoting the number of test cases.
-- The first and only line of each test case contains two space-separated integers $G$ and $B$, the number of girl and boy students at IIT (BHU) respectively.
+- The input consists of an integer $X$ — the AQI Chef measured.
 ### Output Format
 
-For each test case, output a single integer on a new line, the  **minimum**  number of boy students from IIT (BHU) who would not be able to participate.
+Output `YES`, if the government was able to keep the AQI within limits and `NO` otherwise.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings `YES`, `yEs`, `yes`, and `yeS` will all be treated as identical).
 
 ### Constraints
-- $1 \leq T \leq 100$
-- $1 \leq G \lt B \leq 100$
+- $1 \leq X \leq 150$
 ### Sample 1:
 Input
 Output
 
 ```
-3
-1 3
-2 4
-3 10
+50
+
 ```
 
 ```
-2
-2
-7
+YES
+
 ```
 
 ### Explanation:
 
- **Test case $1$:**  There is only $1$ girl and $3$ boys. So, one team can be formed, and minimum $2$ boys will be left behind.
+The AQI is strictly less than $100$. Thus, the government was able to keep the AQI within limits.
 
- **Test case $2$:**  There are $2$ girls and $4$ boys. So, maximum $2$ teams can be formed, and minimum $2$ boys will be left behind.
+### Sample 2:
+Input
+Output
 
- **Test case $3$** : There are $3$ girls and $10$ boys. So, maximum $3$ teams can be formed, and minimum $7$ boys will be left behind.
+```
+100
+
+```
+
+```
+NO
+
+```
+
+### Explanation:
+
+The AQI is equal to $100$. Thus, the government was not able to keep the AQI within limits.
+
+### Sample 3:
+Input
+Output
+
+```
+99
+
+```
+
+```
+YES
+```
+
+### Explanation:
+
+The AQI is strictly less than $100$. Thus, the government was able to keep the AQI within limits.
+
+### Sample 4:
+Input
+Output
+
+```
+145
+
+```
+
+```
+NO
+```
+
+### Explanation:
+
+The AQI is greater than $100$. Thus, the government was not able to keep the AQI within limits.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T16:47:07.323Z  
+**Submitted:** 2026-09-22T16:47:18.767Z  
 
 ```py
 # cook your dish here
 n = int(input())
-for _ in range(n):
-    x,y = map(int,input().split())
-    s = y-x
-    print(s)
+if(n<100):
+    print("YES")
+else:
+    print("NO")
 ```
 
 ---
