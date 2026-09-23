@@ -10,8 +10,6 @@ for _ in range(n):
             r = max(i+y,j+y)
             if l<=0 and r>=x-1:
                 a = min(a,z[i]+z[j])
-    if a==10**9:
-        print("-1")
-    else:
-        print(a)
+    print(-1 if a==10**9 else a)
+    
     
