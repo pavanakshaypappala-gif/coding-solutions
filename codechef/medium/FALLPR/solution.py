@@ -7,7 +7,8 @@ for _ in range(n):
     for i in range(0,len(y)):
         a = a+y[i]
         
-    if(a>=0):
+    if(a>=0 and a!=1):
         print("YES")
     else:
         print("NO")
+    
