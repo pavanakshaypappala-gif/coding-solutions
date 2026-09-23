@@ -76,7 +76,7 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:25:13.974Z  
+**Submitted:** 2026-09-23T15:27:00.961Z  
 
 ```py
 # cook your dish here
@@ -91,10 +91,8 @@ for _ in range(n):
             r = max(i+y,j+y)
             if l<=0 and r>=x-1:
                 a = min(a,z[i]+z[j])
-    if a==10**9:
-        print("-1")
-    else:
-        print(a)
+    print(-1 if a==10**9 else a)
+    
     
 ```
 
