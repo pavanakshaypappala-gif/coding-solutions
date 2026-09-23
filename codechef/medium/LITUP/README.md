@@ -76,14 +76,25 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:16:05.005Z  
+**Submitted:** 2026-09-23T15:23:56.990Z  
 
 ```py
 # cook your dish here
 n = int(input())
 for _ in range(n):
     x,y = map(int,input().split())
-    z = map(int,input().split())
+    z = list(map(int,input().split()))
+    a = 10**9
+    for i in range(x):
+        for j in range(i+1,x):
+            l = min(i-y,j-y)
+            r = min(i+y,j+y)
+            if l<=0 and r>=x-1:
+                a = min(a,z[i]+z[j])
+    if a==10**9:
+        print("-1")
+    else:
+        print(a)
     
 ```
 
