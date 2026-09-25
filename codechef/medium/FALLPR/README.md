@@ -77,7 +77,7 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:40:14.694Z  
+**Submitted:** 2026-09-23T15:42:42.428Z  
 
 ```py
 # cook your dish here
@@ -89,10 +89,11 @@ for _ in range(n):
     for i in range(0,len(y)):
         a = a+y[i]
         
-    if(a>=0):
+    if(a>=0 and a!=1):
         print("YES")
     else:
         print("NO")
+    
 ```
 
 ---
