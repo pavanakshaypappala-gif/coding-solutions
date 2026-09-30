@@ -56,11 +56,22 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:56:54.170Z  
+**Submitted:** 2026-09-30T16:01:21.112Z  
 
 ```py
 # cook your dish here
-
+n = int(input())
+for _ in range(n):
+    x,y,z = map(int,input().split())
+    o = set(map(int,input().split()))
+    a = []
+    for _ in range(z):
+        for s in range(1,x+1):
+            if s not in o:
+                a.append(s)
+                o.add(s)
+                break 
+    print(*a)
 ```
 
 ---
